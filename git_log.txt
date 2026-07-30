@@ -1,0 +1,9 @@
+=== TOOLVA GIT INIT ===
+Fecha: 2026-07-30T15:10:17.010Z
+PROJECT: C:\Users\usuario\Desktop\Proyectos\toolva
+Existe package.json: true
+Git no en: git
+Git no en: C:\Program Files\Git\cmd\git.exe
+Git no en: C:\Program Files\Git\bin\git.exe
+Git no en: C:\Program Files (x86)\Git\cmd\git.exe
+ERROR: Git no encontrado. Instala desde https://git-scm.com/download/win
