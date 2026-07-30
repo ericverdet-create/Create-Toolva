@@ -34,7 +34,7 @@ import { temperatureTool }               from '@/tools/converters/temperature/me
 import { temperatureAdvancedTool }       from '@/tools/converters/temperature-advanced/meta';
 import { speedTool }                     from '@/tools/converters/speed/meta';
 import { areaTool }                      from '@/tools/converters/area/meta';
-import { volumeTool }                    from '@/tools/converters/volume/meta';
+import { durationConverterTool }         from '@/tools/converters/duration/meta';
 import { powerConverterTool }            from '@/tools/converters/power/meta';
 import { romanNumeralsTool }             from '@/tools/converters/roman-numerals/meta';
 import { currencyTool }                  from '@/tools/converters/currency/meta';
@@ -45,17 +45,19 @@ import { morseCodeTool }                 from '@/tools/converters/morse/meta';
 
 // Text
 import { wordCounterTool }       from '@/tools/text/word-counter/meta';
-import { textCaseTool }          from '@/tools/text/text-case/meta';
-import { loremIpsumTool }        from '@/tools/text/lorem-ipsum/meta';
-import { slugGeneratorTool }     from '@/tools/text/slug-generator/meta';
+import { caseConverterTool }     from '@/tools/text/case-converter/meta';
+import { charCounterTool }       from '@/tools/text/char-counter/meta';
+import { jsonFormatterTool }     from '@/tools/text/json-formatter/meta';
 
 // Crypto
 import { uuidGeneratorTool }     from '@/tools/crypto/uuid-generator/meta';
-import { jsonFormatterTool }     from '@/tools/crypto/json-formatter/meta';
+import { base64Tool }            from '@/tools/crypto/base64/meta';
+import { passwordGeneratorTool } from '@/tools/crypto/password-generator/meta';
 
 // Tax
-import { discountCalculatorTool } from '@/tools/tax/discount-calculator/meta';
+import { discountCalculatorTool } from '@/tools/math/discount-calculator/meta';
 import { ivaCalculatorTool }      from '@/tools/tax/iva-calculator/meta';
+import { vatCalculatorTool }      from '@/tools/tax/vat-calculator/meta';
 
 // Health
 import { bmiCalculatorTool }     from '@/tools/health/bmi-calculator/meta';
@@ -84,7 +86,7 @@ export const toolRegistry: ToolDefinition[] = [
   temperatureAdvancedTool,
   speedTool,
   areaTool,
-  volumeTool,
+  durationConverterTool,
   powerConverterTool,
   romanNumeralsTool,
   currencyTool,
@@ -95,17 +97,19 @@ export const toolRegistry: ToolDefinition[] = [
 
   // Text (4)
   wordCounterTool,
-  textCaseTool,
-  loremIpsumTool,
-  slugGeneratorTool,
-
-  // Crypto (2)
-  uuidGeneratorTool,
+  caseConverterTool,
+  charCounterTool,
   jsonFormatterTool,
 
-  // Tax (2)
+  // Crypto (3)
+  uuidGeneratorTool,
+  base64Tool,
+  passwordGeneratorTool,
+
+  // Tax (3)
   discountCalculatorTool,
   ivaCalculatorTool,
+  vatCalculatorTool,
 
   // Health (2)
   bmiCalculatorTool,
