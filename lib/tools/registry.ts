@@ -28,18 +28,18 @@ import { mortgageCalculatorTool }   from '@/tools/math/mortgage-calculator/meta'
 import { dateDiffTool }             from '@/tools/math/date-diff/meta';
 
 // Converters
-import { lengthTool }                    from '@/tools/converters/length/meta';
-import { weightTool }                    from '@/tools/converters/weight/meta';
-import { temperatureTool }               from '@/tools/converters/temperature/meta';
+import { lengthConverterTool }           from '@/tools/converters/length/meta';
+import { weightConverterTool }           from '@/tools/converters/weight/meta';
+import { temperatureConverterTool }      from '@/tools/converters/temperature/meta';
 import { temperatureAdvancedTool }       from '@/tools/converters/temperature-advanced/meta';
-import { speedTool }                     from '@/tools/converters/speed/meta';
-import { areaTool }                      from '@/tools/converters/area/meta';
+import { speedConverterTool }            from '@/tools/converters/speed/meta';
+import { areaConverterTool }             from '@/tools/converters/area/meta';
 import { durationConverterTool }         from '@/tools/converters/duration/meta';
 import { powerConverterTool }            from '@/tools/converters/power/meta';
 import { romanNumeralsTool }             from '@/tools/converters/roman-numerals/meta';
-import { currencyTool }                  from '@/tools/converters/currency/meta';
-import { pressureTool }                  from '@/tools/converters/pressure/meta';
-import { angleTool }                     from '@/tools/converters/angle/meta';
+import { currencyConverterTool }         from '@/tools/converters/currency/meta';
+import { pressureConverterTool }         from '@/tools/converters/pressure/meta';
+import { angleConverterTool }            from '@/tools/converters/angle/meta';
 import { colorConverterTool }            from '@/tools/converters/color/meta';
 import { morseCodeTool }                 from '@/tools/converters/morse/meta';
 
@@ -54,7 +54,7 @@ import { uuidGeneratorTool }     from '@/tools/crypto/uuid-generator/meta';
 import { base64Tool }            from '@/tools/crypto/base64/meta';
 import { passwordGeneratorTool } from '@/tools/crypto/password-generator/meta';
 
-// Tax
+// Tax / Math
 import { discountCalculatorTool } from '@/tools/math/discount-calculator/meta';
 import { ivaCalculatorTool }      from '@/tools/tax/iva-calculator/meta';
 import { vatCalculatorTool }      from '@/tools/tax/vat-calculator/meta';
@@ -80,18 +80,18 @@ export const toolRegistry: ToolDefinition[] = [
   scientificNotationTool,
 
   // Converters (14)
-  lengthTool,
-  weightTool,
-  temperatureTool,
+  lengthConverterTool,
+  weightConverterTool,
+  temperatureConverterTool,
   temperatureAdvancedTool,
-  speedTool,
-  areaTool,
+  speedConverterTool,
+  areaConverterTool,
   durationConverterTool,
   powerConverterTool,
   romanNumeralsTool,
-  currencyTool,
-  pressureTool,
-  angleTool,
+  currencyConverterTool,
+  pressureConverterTool,
+  angleConverterTool,
   colorConverterTool,
   morseCodeTool,
 
@@ -115,6 +115,13 @@ export const toolRegistry: ToolDefinition[] = [
   bmiCalculatorTool,
   bmrCalculatorTool,
 ];
+
+// Aliases for backward compatibility with older page files
+export const tools = toolRegistry;
+
+export function getAllCategories(): string[] {
+  return [...new Set(toolRegistry.map(t => t.category))];
+}
 
 export function getToolBySlug(slug: string): ToolDefinition | undefined {
   return toolRegistry.find(t => t.slug === slug);

@@ -21,6 +21,5 @@ export function calcStats(nums: number[]): StatsResult | null {
   return { count, sum, mean, median, mode, min: sorted[0], max: sorted[count-1], range: sorted[count-1] - sorted[0], variance, stddev }
 }
 export function parseNumbers(input: string): number[] {
-  return input.split(/[,;s
-]+/).map(s => parseFloat(s.replace(',', '.'))).filter(n => !isNaN(n))
+  return input.split(/[,;\s]+/).map(s => parseFloat(s.replace(',', '.'))).filter(n => !isNaN(n))
 }

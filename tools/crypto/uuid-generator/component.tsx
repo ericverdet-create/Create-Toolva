@@ -29,8 +29,7 @@ export default function UUIDGenerator() {
         <div className="space-y-2">
           {uuids.length > 1 && (
             <div className="flex justify-end">
-              <button onClick={() => copy(uuids.join('
-'), 'all')}
+              <button onClick={() => copy(uuids.join('\n'), 'all')}
                 className="text-xs text-brand-600 hover:text-brand-700 font-medium">
                 {copied === 'all' ? 'Copiados!' : 'Copiar todos'}
               </button>
