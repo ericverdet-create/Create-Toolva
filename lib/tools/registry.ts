@@ -86,6 +86,13 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 18
+import { netSalaryTool }             from '@/tools/math/net-salary/meta';
+import { pregnancyWeeksTool }        from '@/tools/math/pregnancy-weeks/meta';
+import { invoiceCalculatorTool }     from '@/tools/math/invoice-calculator/meta';
+import { countdownTimerTool }        from '@/tools/math/countdown-timer/meta';
+import { bmiChildrenTool }           from '@/tools/health/bmi-children/meta';
+
 // Sprint 17
 import { eurosPesetasTool }          from '@/tools/converters/euros-pesetas/meta';
 import { hoursWorkedTool }           from '@/tools/math/hours-worked/meta';
@@ -192,6 +199,13 @@ export const toolRegistry: ToolDefinition[] = [
   pensionCalculatorTool,
   clothingSizeTool,
   rentalCalculatorTool,
+
+  // Sprint 18 (5)
+  netSalaryTool,
+  pregnancyWeeksTool,
+  invoiceCalculatorTool,
+  countdownTimerTool,
+  bmiChildrenTool,
 ];
 
 // Aliases for backward compatibility with older page files
