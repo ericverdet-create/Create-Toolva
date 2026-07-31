@@ -71,6 +71,14 @@ import { hashGeneratorTool }         from '@/tools/crypto/hash-generator/meta';
 import { dataStorageConverterTool }  from '@/tools/converters/data-storage/meta';
 import { triangleCalculatorTool }    from '@/tools/math/triangle-calculator/meta';
 
+// Sprint 14
+import { qrGeneratorTool }           from '@/tools/converters/qr-generator/meta';
+import { finiquitoCalculatorTool }   from '@/tools/math/finiquito-calculator/meta';
+import { loanCalculatorTool }        from '@/tools/math/loan-calculator/meta';
+import { calorieCalculatorTool }     from '@/tools/health/calorie-calculator/meta';
+import { savingsCalculatorTool }     from '@/tools/math/savings-calculator/meta';
+import { timeCalculatorTool }        from '@/tools/math/time-calculator/meta';
+
 export const toolRegistry: ToolDefinition[] = [
   // Math (13)
   percentageCalculatorTool,
@@ -130,6 +138,14 @@ export const toolRegistry: ToolDefinition[] = [
   hashGeneratorTool,
   dataStorageConverterTool,
   triangleCalculatorTool,
+
+  // Sprint 14 (6)
+  qrGeneratorTool,
+  finiquitoCalculatorTool,
+  loanCalculatorTool,
+  calorieCalculatorTool,
+  savingsCalculatorTool,
+  timeCalculatorTool,
 ];
 
 // Aliases for backward compatibility with older page files
