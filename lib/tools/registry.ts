@@ -86,6 +86,10 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 24
+import { alcoholCalculatorTool }     from '@/tools/health/alcohol-calculator/meta';
+import { energiaSolarTool }          from '@/tools/math/energia-solar/meta';
+
 // Sprint 23
 import { gratuityCalculatorTool }    from '@/tools/math/indemnizacion-despido/meta';
 import { precioM2Tool }              from '@/tools/math/precio-m2/meta';
@@ -268,6 +272,10 @@ export const toolRegistry: ToolDefinition[] = [
   gratuityCalculatorTool,
   precioM2Tool,
   numerologyTool,
+
+  // Sprint 24 (2)
+  alcoholCalculatorTool,
+  energiaSolarTool,
 ];
 
 // Aliases for backward compatibility with older page files
