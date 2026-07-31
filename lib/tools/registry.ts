@@ -63,6 +63,14 @@ import { vatCalculatorTool }      from '@/tools/tax/vat-calculator/meta';
 import { bmiCalculatorTool }     from '@/tools/health/bmi-calculator/meta';
 import { bmrCalculatorTool }     from '@/tools/health/bmr-calculator/meta';
 
+// New Sprint 13
+import { salaryCalculatorTool }      from '@/tools/math/salary-calculator/meta';
+import { volumeConverterTool }       from '@/tools/converters/volume/meta';
+import { loremIpsumTool }            from '@/tools/text/lorem-ipsum/meta';
+import { hashGeneratorTool }         from '@/tools/crypto/hash-generator/meta';
+import { dataStorageConverterTool }  from '@/tools/converters/data-storage/meta';
+import { triangleCalculatorTool }    from '@/tools/math/triangle-calculator/meta';
+
 export const toolRegistry: ToolDefinition[] = [
   // Math (13)
   percentageCalculatorTool,
@@ -114,6 +122,14 @@ export const toolRegistry: ToolDefinition[] = [
   // Health (2)
   bmiCalculatorTool,
   bmrCalculatorTool,
+
+  // Sprint 13 (6)
+  salaryCalculatorTool,
+  volumeConverterTool,
+  loremIpsumTool,
+  hashGeneratorTool,
+  dataStorageConverterTool,
+  triangleCalculatorTool,
 ];
 
 // Aliases for backward compatibility with older page files

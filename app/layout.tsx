@@ -83,7 +83,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </div>
         <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800 py-6 mt-auto">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
+              <a href="/herramientas" className="hover:text-indigo-600 transition-colors">Herramientas</a>
+              <a href="/sobre-nosotros" className="hover:text-indigo-600 transition-colors">Sobre Toolva</a>
+              <a href="/privacidad" className="hover:text-indigo-600 transition-colors">Privacidad</a>
+            </div>
             <p className="text-sm text-gray-500 dark:text-gray-400">
               © {new Date().getFullYear()} Toolva — Herramientas online gratuitas
             </p>
