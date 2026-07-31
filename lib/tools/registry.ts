@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 35
+import { combustibleViajeTool }      from '@/tools/math/calculo-combustible-viaje/meta';
+import { calculadoraIrpfTool }       from '@/tools/math/calculadora-irpf/meta';
+import { calculadoraHidratacionTool } from '@/tools/health/calculadora-hidratacion/meta';
+import { temperaturaCoccinaTool }    from '@/tools/converters/temperatura-cocina/meta';
+
 // Sprint 34
 import { calculadoraPropinaTool }    from '@/tools/math/calculadora-propina/meta';
 import { calculadoraEmbarazoTool }   from '@/tools/health/calculadora-embarazo/meta';
@@ -396,6 +402,12 @@ export const toolRegistry: ToolDefinition[] = [
   calculadoraEmbarazoTool,
   descuentoTiendaTool,
   velocidadVientoTool,
+
+  // Sprint 35 (4)
+  combustibleViajeTool,
+  calculadoraIrpfTool,
+  calculadoraHidratacionTool,
+  temperaturaCoccinaTool,
 ];
 
 // Aliases for backward compatibility with older page files
