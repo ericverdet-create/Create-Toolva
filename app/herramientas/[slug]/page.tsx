@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import { Suspense } from 'react';
 import { tools, getToolBySlug, getToolsByCategory } from '@/lib/tools/registry';
 import { toolJsonLd, breadcrumbJsonLd } from '@/lib/structured-data';
 import Link from 'next/link';
@@ -27,11 +28,11 @@ export function generateMetadata({ params }: Props): Metadata {
   };
 }
 
-export default function ToolPage({ params }: Props) {
+export default async function ToolPage({ params }: Props) {
   const tool = getToolBySlug(params.slug);
   if (!tool) notFound();
 
-  const ToolComponent = tool.component as React.ComponentType;
+  const { default: ToolComponent } = await tool.component();
   const related = getToolsByCategory(tool.category)
     .filter(t => t.id !== tool.id)
     .slice(0, 4);
@@ -90,7 +91,9 @@ export default function ToolPage({ params }: Props) {
         </header>
 
         <section aria-label={`Herramienta: ${tool.name}`} className="card p-4 sm:p-6 mb-8">
-          <ToolComponent />
+          <Suspense fallback={<div className="flex items-center justify-center h-40 text-gray-400 text-sm">Cargando...</div>}>
+            <ToolComponent />
+          </Suspense>
         </section>
 
         {related.length > 0 && (
