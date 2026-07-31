@@ -86,6 +86,14 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 17
+import { eurosPesetasTool }          from '@/tools/converters/euros-pesetas/meta';
+import { hoursWorkedTool }           from '@/tools/math/hours-worked/meta';
+import { randomNumberTool }          from '@/tools/math/random-number/meta';
+import { pensionCalculatorTool }     from '@/tools/math/pension-calculator/meta';
+import { clothingSizeTool }          from '@/tools/converters/clothing-size/meta';
+import { rentalCalculatorTool }      from '@/tools/math/rental-calculator/meta';
+
 // Sprint 16
 import { commissionCalculatorTool }  from '@/tools/math/commission-calculator/meta';
 import { autonomosCalculatorTool }   from '@/tools/math/autonomos-calculator/meta';
@@ -176,6 +184,14 @@ export const toolRegistry: ToolDefinition[] = [
   inflationCalculatorTool,
   multiplicationTableTool,
   weightedAverageTool,
+
+  // Sprint 17 (6)
+  eurosPesetasTool,
+  hoursWorkedTool,
+  randomNumberTool,
+  pensionCalculatorTool,
+  clothingSizeTool,
+  rentalCalculatorTool,
 ];
 
 // Aliases for backward compatibility with older page files
