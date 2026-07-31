@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 31
+import { presupuestoPersonalTool }   from '@/tools/math/presupuesto-personal/meta';
+import { cicloMenstrualTool }        from '@/tools/health/ciclo-menstrual/meta';
+import { ibanValidatorTool }         from '@/tools/math/iban-validator/meta';
+import { areaFigurasTool }           from '@/tools/math/area-figuras/meta';
+
 // Sprint 30
 import { proteinasDiariasTool }      from '@/tools/health/proteinas-diarias/meta';
 import { letraDniTool }              from '@/tools/math/letra-dni/meta';
@@ -348,6 +354,12 @@ export const toolRegistry: ToolDefinition[] = [
   letraDniTool,
   billetesMonedasTool,
   cuotaComunidadTool,
+
+  // Sprint 31 (4)
+  presupuestoPersonalTool,
+  cicloMenstrualTool,
+  ibanValidatorTool,
+  areaFigurasTool,
 ];
 
 // Aliases for backward compatibility with older page files
