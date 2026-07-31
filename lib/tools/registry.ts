@@ -86,6 +86,11 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 23
+import { gratuityCalculatorTool }    from '@/tools/math/indemnizacion-despido/meta';
+import { precioM2Tool }              from '@/tools/math/precio-m2/meta';
+import { numerologyTool }            from '@/tools/converters/numerology/meta';
+
 // Sprint 22
 import { cementCalculatorTool }      from '@/tools/math/cement-calculator/meta';
 import { fuelCostTool }              from '@/tools/math/fuel-cost/meta';
@@ -258,6 +263,11 @@ export const toolRegistry: ToolDefinition[] = [
   fuelCostTool,
   idealWeightTool,
   taxRefundTool,
+
+  // Sprint 23 (3)
+  gratuityCalculatorTool,
+  precioM2Tool,
+  numerologyTool,
 ];
 
 // Aliases for backward compatibility with older page files
