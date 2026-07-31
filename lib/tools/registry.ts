@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 33
+import { cuotaPrestamoPersonalTool } from '@/tools/math/cuota-prestamo-personal/meta';
+import { cambioDivisasTool }         from '@/tools/math/cambio-divisas/meta';
+import { seguroVidaTool }            from '@/tools/math/seguro-vida/meta';
+import { analizadorTextoTool }       from '@/tools/text/analizador-texto/meta';
+
 // Sprint 32
 import { calculoMacrosTool }         from '@/tools/math/calculo-macros/meta';
 import { numeroSuerteTool }          from '@/tools/math/numero-suerte/meta';
@@ -372,6 +378,12 @@ export const toolRegistry: ToolDefinition[] = [
   numeroSuerteTool,
   volumenFigurasTool,
   imcAvanzadoTool,
+
+  // Sprint 33 (4)
+  cuotaPrestamoPersonalTool,
+  cambioDivisasTool,
+  seguroVidaTool,
+  analizadorTextoTool,
 ];
 
 // Aliases for backward compatibility with older page files
