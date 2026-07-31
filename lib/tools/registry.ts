@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 29
+import { precioLuzTool }             from '@/tools/math/precio-luz/meta';
+import { liquidacionSalarioTool }    from '@/tools/math/calculo-finiquito-completo/meta';
+import { tallasNinosTool }           from '@/tools/converters/tallas-ninos/meta';
+import { porcentajeNotaTool }        from '@/tools/math/porcentaje-nota/meta';
+
 // Sprint 28
 import { plazoFijoTool }             from '@/tools/math/plazo-fijo/meta';
 import { notaMediaTool }             from '@/tools/math/nota-media/meta';
@@ -324,6 +330,12 @@ export const toolRegistry: ToolDefinition[] = [
   notaMediaTool,
   horasExtrasTool,
   gastoCalorico,
+
+  // Sprint 29 (4)
+  precioLuzTool,
+  liquidacionSalarioTool,
+  tallasNinosTool,
+  porcentajeNotaTool,
 ];
 
 // Aliases for backward compatibility with older page files
