@@ -79,6 +79,13 @@ import { calorieCalculatorTool }     from '@/tools/health/calorie-calculator/met
 import { savingsCalculatorTool }     from '@/tools/math/savings-calculator/meta';
 import { timeCalculatorTool }        from '@/tools/math/time-calculator/meta';
 
+// Sprint 15
+import { numberToWordsTool }         from '@/tools/text/number-to-words/meta';
+import { reverseVatTool }            from '@/tools/tax/reverse-vat/meta';
+import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
+import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
+import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
+
 export const toolRegistry: ToolDefinition[] = [
   // Math (13)
   percentageCalculatorTool,
@@ -146,6 +153,13 @@ export const toolRegistry: ToolDefinition[] = [
   calorieCalculatorTool,
   savingsCalculatorTool,
   timeCalculatorTool,
+
+  // Sprint 15 (5)
+  numberToWordsTool,
+  reverseVatTool,
+  roiCalculatorTool,
+  baseConverterTool,
+  simpleInterestTool,
 ];
 
 // Aliases for backward compatibility with older page files
