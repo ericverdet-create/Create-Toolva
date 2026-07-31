@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 28
+import { plazoFijoTool }             from '@/tools/math/plazo-fijo/meta';
+import { notaMediaTool }             from '@/tools/math/nota-media/meta';
+import { horasExtrasTool }           from '@/tools/math/horas-extras/meta';
+import { gastoCalorico }             from '@/tools/health/gasto-calorico/meta';
+
 // Sprint 27
 import { calculadoraSuenoTool }      from '@/tools/health/calculadora-sueno/meta';
 import { regla72Tool }               from '@/tools/math/regla-72/meta';
@@ -312,6 +318,12 @@ export const toolRegistry: ToolDefinition[] = [
   regla72Tool,
   amortizacionHipotecaTool,
   energiaConverterTool,
+
+  // Sprint 28 (4)
+  plazoFijoTool,
+  notaMediaTool,
+  horasExtrasTool,
+  gastoCalorico,
 ];
 
 // Aliases for backward compatibility with older page files
