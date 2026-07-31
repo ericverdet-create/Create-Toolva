@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 32
+import { calculoMacrosTool }         from '@/tools/math/calculo-macros/meta';
+import { numeroSuerteTool }          from '@/tools/math/numero-suerte/meta';
+import { volumenFigurasTool }        from '@/tools/math/calculo-volumen-figuras/meta';
+import { imcAvanzadoTool }           from '@/tools/health/calculadora-imc-avanzado/meta';
+
 // Sprint 31
 import { presupuestoPersonalTool }   from '@/tools/math/presupuesto-personal/meta';
 import { cicloMenstrualTool }        from '@/tools/health/ciclo-menstrual/meta';
@@ -360,6 +366,12 @@ export const toolRegistry: ToolDefinition[] = [
   cicloMenstrualTool,
   ibanValidatorTool,
   areaFigurasTool,
+
+  // Sprint 32 (4)
+  calculoMacrosTool,
+  numeroSuerteTool,
+  volumenFigurasTool,
+  imcAvanzadoTool,
 ];
 
 // Aliases for backward compatibility with older page files
