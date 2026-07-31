@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 25
+import { calorieFoodsTool }          from '@/tools/health/calorie-foods/meta';
+import { hourlyRateTool }            from '@/tools/math/hourly-rate/meta';
+import { descuentoAcumuladoTool }    from '@/tools/math/descuento-acumulado/meta';
+import { imcCinturaTool }            from '@/tools/health/imc-cintura/meta';
+
 // Sprint 24
 import { alcoholCalculatorTool }     from '@/tools/health/alcohol-calculator/meta';
 import { energiaSolarTool }          from '@/tools/math/energia-solar/meta';
@@ -276,6 +282,12 @@ export const toolRegistry: ToolDefinition[] = [
   // Sprint 24 (2)
   alcoholCalculatorTool,
   energiaSolarTool,
+
+  // Sprint 25 (4)
+  calorieFoodsTool,
+  hourlyRateTool,
+  descuentoAcumuladoTool,
+  imcCinturaTool,
 ];
 
 // Aliases for backward compatibility with older page files
