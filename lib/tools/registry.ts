@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 34
+import { calculadoraPropinaTool }    from '@/tools/math/calculadora-propina/meta';
+import { calculadoraEmbarazoTool }   from '@/tools/health/calculadora-embarazo/meta';
+import { descuentoTiendaTool }       from '@/tools/math/calculadora-descuento-tienda/meta';
+import { velocidadVientoTool }       from '@/tools/converters/velocidad-viento/meta';
+
 // Sprint 33
 import { cuotaPrestamoPersonalTool } from '@/tools/math/cuota-prestamo-personal/meta';
 import { cambioDivisasTool }         from '@/tools/math/cambio-divisas/meta';
@@ -384,6 +390,12 @@ export const toolRegistry: ToolDefinition[] = [
   cambioDivisasTool,
   seguroVidaTool,
   analizadorTextoTool,
+
+  // Sprint 34 (4)
+  calculadoraPropinaTool,
+  calculadoraEmbarazoTool,
+  descuentoTiendaTool,
+  velocidadVientoTool,
 ];
 
 // Aliases for backward compatibility with older page files
