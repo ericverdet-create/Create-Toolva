@@ -86,6 +86,14 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 16
+import { commissionCalculatorTool }  from '@/tools/math/commission-calculator/meta';
+import { autonomosCalculatorTool }   from '@/tools/math/autonomos-calculator/meta';
+import { businessDaysTool }          from '@/tools/math/business-days/meta';
+import { inflationCalculatorTool }   from '@/tools/math/inflation-calculator/meta';
+import { multiplicationTableTool }   from '@/tools/math/multiplication-table/meta';
+import { weightedAverageTool }       from '@/tools/math/weighted-average/meta';
+
 export const toolRegistry: ToolDefinition[] = [
   // Math (13)
   percentageCalculatorTool,
@@ -160,6 +168,14 @@ export const toolRegistry: ToolDefinition[] = [
   roiCalculatorTool,
   baseConverterTool,
   simpleInterestTool,
+
+  // Sprint 16 (6)
+  commissionCalculatorTool,
+  autonomosCalculatorTool,
+  businessDaysTool,
+  inflationCalculatorTool,
+  multiplicationTableTool,
+  weightedAverageTool,
 ];
 
 // Aliases for backward compatibility with older page files
