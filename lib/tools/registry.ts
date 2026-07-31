@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 26
+import { rentabilidadAlquilerTool }  from '@/tools/math/rentabilidad-alquiler/meta';
+import { tensionArterialTool }       from '@/tools/health/tension-arterial/meta';
+import { shoeSizeTool }              from '@/tools/converters/shoe-size/meta';
+import { interesDemoraTool }         from '@/tools/math/interes-demora/meta';
+
 // Sprint 25
 import { calorieFoodsTool }          from '@/tools/health/calorie-foods/meta';
 import { hourlyRateTool }            from '@/tools/math/hourly-rate/meta';
@@ -288,6 +294,12 @@ export const toolRegistry: ToolDefinition[] = [
   hourlyRateTool,
   descuentoAcumuladoTool,
   imcCinturaTool,
+
+  // Sprint 26 (4)
+  rentabilidadAlquilerTool,
+  tensionArterialTool,
+  shoeSizeTool,
+  interesDemoraTool,
 ];
 
 // Aliases for backward compatibility with older page files
