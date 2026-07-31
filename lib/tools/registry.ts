@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 20
+import { waterIntakeTool }           from '@/tools/health/water-intake/meta';
+import { unitPriceTool }             from '@/tools/math/unit-price/meta';
+import { speedDistanceTimeTool }     from '@/tools/math/speed-distance-time/meta';
+import { mortgageOverpaymentTool }   from '@/tools/math/mortgage-overpayment/meta';
+
 // Sprint 19
 import { electricityBillTool }       from '@/tools/math/electricity-bill/meta';
 import { tipSplitterTool }           from '@/tools/math/tip-splitter/meta';
@@ -220,6 +226,12 @@ export const toolRegistry: ToolDefinition[] = [
   calorieDeficitTool,
   bodyFatTool,
   timezoneTool,
+
+  // Sprint 20 (4)
+  waterIntakeTool,
+  unitPriceTool,
+  speedDistanceTimeTool,
+  mortgageOverpaymentTool,
 ];
 
 // Aliases for backward compatibility with older page files
