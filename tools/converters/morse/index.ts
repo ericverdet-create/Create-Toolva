@@ -24,5 +24,5 @@ export function morseToText(morse: string): string {
 }
 
 export function isValidMorse(s: string): boolean {
-  return /^[.- /]+$/.test(s.trim());
+  return /^[.\-/ ]+$/.test(s.trim());
 }
