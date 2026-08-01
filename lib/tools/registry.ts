@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 36
+import { caloriasEjercicioTool }     from '@/tools/health/calorias-ejercicio/meta';
+import { diasHastaFechaTool }        from '@/tools/math/dias-hasta-fecha/meta';
+import { ahorroJubilacionTool }      from '@/tools/math/ahorro-jubilacion/meta';
+import { testVelocidadEscrituraTool } from '@/tools/health/test-velocidad-escritura/meta';
+
 // Sprint 35
 import { combustibleViajeTool }      from '@/tools/math/calculo-combustible-viaje/meta';
 import { calculadoraIrpfTool }       from '@/tools/math/calculadora-irpf/meta';
@@ -408,6 +414,12 @@ export const toolRegistry: ToolDefinition[] = [
   calculadoraIrpfTool,
   calculadoraHidratacionTool,
   temperaturaCoccinaTool,
+
+  // Sprint 36 (4)
+  caloriasEjercicioTool,
+  diasHastaFechaTool,
+  ahorroJubilacionTool,
+  testVelocidadEscrituraTool,
 ];
 
 // Aliases for backward compatibility with older page files
