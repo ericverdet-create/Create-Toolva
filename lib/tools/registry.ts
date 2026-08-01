@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 38
+import { costeReformaHogarTool }     from '@/tools/math/coste-reforma-hogar/meta';
+import { caloriasBedidasTool }       from '@/tools/health/calorias-bebidas/meta';
+import { fraccionesDecimalesTool }   from '@/tools/math/fracciones-decimales/meta';
+import { simuladorDadosTool }        from '@/tools/math/simulador-dados/meta';
+
 // Sprint 37
 import { escalarRecetaTool }         from '@/tools/math/escalar-receta/meta';
 import { consumoElectricoAparatosTool } from '@/tools/math/consumo-electrico-aparatos/meta';
@@ -432,6 +438,12 @@ export const toolRegistry: ToolDefinition[] = [
   consumoElectricoAparatosTool,
   calculadoraTaeTool,
   testMemoriaTool,
+
+  // Sprint 38 (4)
+  costeReformaHogarTool,
+  caloriasBedidasTool,
+  fraccionesDecimalesTool,
+  simuladorDadosTool,
 ];
 
 // Aliases for backward compatibility with older page files
