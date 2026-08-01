@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 42
+import { calculadoraLetraDniTool }   from '@/tools/math/calculadora-letra-dni/meta';
+import { validadorIbanTool }         from '@/tools/math/validador-iban/meta';
+import { calculadoraAutonomiaElectricoTool } from '@/tools/math/calculadora-autonomia-electrico/meta';
+import { testNivelInglesTool }       from '@/tools/text/test-nivel-ingles/meta';
+
 // Sprint 41
 import { calculadoraRegraTresTool }  from '@/tools/math/calculadora-regla-de-tres/meta';
 import { conversorBasesNumericasTool } from '@/tools/math/conversor-bases-numericas/meta';
@@ -468,6 +474,12 @@ export const toolRegistry: ToolDefinition[] = [
   calculadoraSuenoDeudaTool,
   descuentoSegundaManoTool,
   tablaUnitariaTool,
+
+  // Sprint 42 (4)
+  calculadoraLetraDniTool,
+  validadorIbanTool,
+  calculadoraAutonomiaElectricoTool,
+  testNivelInglesTool,
 
   // Sprint 41 (4)
   calculadoraRegraTresTool,
