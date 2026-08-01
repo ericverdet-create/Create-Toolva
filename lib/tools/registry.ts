@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 40
+import { calculadoraPensionesJubilacionTool } from '@/tools/math/calculadora-pensiones-jubilacion/meta';
+import { riesgoCardiovascularTool }  from '@/tools/health/calculadora-riesgo-cardiovascular/meta';
+import { generadorListaAleatoriosTool } from '@/tools/math/generador-numeros-aleatorios-lista/meta';
+import { generadorContrasenaTool }   from '@/tools/text/generador-contrasena-segura/meta';
+
 // Sprint 39
 import { calculadoraFinanzasPersonalesTool } from '@/tools/math/calculadora-finanzas-personales/meta';
 import { calculadoraSuenoDeudaTool }  from '@/tools/health/calculadora-sueno-deuda/meta';
@@ -456,6 +462,12 @@ export const toolRegistry: ToolDefinition[] = [
   calculadoraSuenoDeudaTool,
   descuentoSegundaManoTool,
   tablaUnitariaTool,
+
+  // Sprint 40 (4)
+  calculadoraPensionesJubilacionTool,
+  riesgoCardiovascularTool,
+  generadorListaAleatoriosTool,
+  generadorContrasenaTool,
 ];
 
 // Aliases for backward compatibility with older page files
