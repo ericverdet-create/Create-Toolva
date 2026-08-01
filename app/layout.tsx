@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     default: 'Toolva — Herramientas Online Gratuitas',
     template: '%s | Toolva',
   },
-  description: 'Más de 40 herramientas online gratuitas: calculadoras, conversores, utilidades de texto, criptografía y más. Rápido, sin registro.',
-  keywords: ['herramientas online', 'calculadora', 'conversor', 'utilidades gratuitas'],
+  description: 'Más de 140 herramientas online gratuitas: calculadoras de finanzas, salud, conversores, utilidades de texto y más. Sin registro, sin instalación.',
+  keywords: ['herramientas online gratuitas', 'calculadora online', 'conversor online', 'calculadora financiera', 'herramientas gratis'],
   authors: [{ name: 'Toolva' }],
   manifest: '/manifest.json',
   openGraph: {
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     siteName: 'Toolva',
     title: 'Toolva — Herramientas Online Gratuitas',
-    description: 'Más de 40 herramientas online gratuitas: calculadoras, conversores y más.',
+    description: 'Más de 140 herramientas online gratuitas: calculadoras, conversores, salud, finanzas y más.',
   },
   twitter: {
     card: 'summary',
     title: 'Toolva — Herramientas Online Gratuitas',
-    description: 'Más de 40 herramientas online gratuitas.',
+    description: 'Más de 140 herramientas online gratuitas. Sin registro.',
   },
   robots: {
     index: true,
@@ -70,6 +70,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* Google AdSense — activa en Vercel: NEXT_PUBLIC_ADSENSE_ID=ca-pub-XXXXXXXXXXXXXXXX */}
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
+            crossOrigin="anonymous"
+          />
+        )}
         {/* PWA service worker */}
         <script dangerouslySetInnerHTML={{ __html: `
           if ('serviceWorker' in navigator) {
