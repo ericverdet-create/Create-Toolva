@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 37
+import { escalarRecetaTool }         from '@/tools/math/escalar-receta/meta';
+import { consumoElectricoAparatosTool } from '@/tools/math/consumo-electrico-aparatos/meta';
+import { calculadoraTaeTool }        from '@/tools/math/calculadora-tae/meta';
+import { testMemoriaTool }           from '@/tools/health/test-memoria/meta';
+
 // Sprint 36
 import { caloriasEjercicioTool }     from '@/tools/health/calorias-ejercicio/meta';
 import { diasHastaFechaTool }        from '@/tools/math/dias-hasta-fecha/meta';
@@ -420,6 +426,12 @@ export const toolRegistry: ToolDefinition[] = [
   diasHastaFechaTool,
   ahorroJubilacionTool,
   testVelocidadEscrituraTool,
+
+  // Sprint 37 (4)
+  escalarRecetaTool,
+  consumoElectricoAparatosTool,
+  calculadoraTaeTool,
+  testMemoriaTool,
 ];
 
 // Aliases for backward compatibility with older page files
