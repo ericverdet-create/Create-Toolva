@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/'],
       },
     ],
-    sitemap: 'https://toolva.com/sitemap.xml',
-    host: 'https://toolva.com',
+    sitemap: 'https://create-toolva.vercel.app/sitemap.xml',
+    host: 'https://create-toolva.vercel.app',
   };
 }
