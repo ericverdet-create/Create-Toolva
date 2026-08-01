@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { toolRegistry } from '@/lib/tools/registry';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://toolva.com';
+  const base = 'https://create-toolva.vercel.app';
 
   const toolUrls = toolRegistry.map(tool => ({
     url: `${base}/herramientas/${tool.slug}`,

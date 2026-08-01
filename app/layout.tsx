@@ -8,7 +8,7 @@ import { siteJsonLd } from '@/lib/structured-data';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://toolva.com'),
+  metadataBase: new URL('https://create-toolva.vercel.app'),
   title: {
     default: 'Toolva — Herramientas Online Gratuitas',
     template: '%s | Toolva',
