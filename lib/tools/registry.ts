@@ -86,6 +86,12 @@ import { roiCalculatorTool }         from '@/tools/math/roi-calculator/meta';
 import { baseConverterTool }         from '@/tools/converters/base-converter/meta';
 import { simpleInterestTool }        from '@/tools/math/simple-interest/meta';
 
+// Sprint 39
+import { calculadoraFinanzasPersonalesTool } from '@/tools/math/calculadora-finanzas-personales/meta';
+import { calculadoraSuenoDeudaTool }  from '@/tools/health/calculadora-sueno-deuda/meta';
+import { descuentoSegundaManoTool }  from '@/tools/math/calculadora-descuento-segunda-mano/meta';
+import { tablaUnitariaTool }         from '@/tools/converters/tabla-unitaria/meta';
+
 // Sprint 38
 import { costeReformaHogarTool }     from '@/tools/math/coste-reforma-hogar/meta';
 import { caloriasBedidasTool }       from '@/tools/health/calorias-bebidas/meta';
@@ -444,6 +450,12 @@ export const toolRegistry: ToolDefinition[] = [
   caloriasBedidasTool,
   fraccionesDecimalesTool,
   simuladorDadosTool,
+
+  // Sprint 39 (4)
+  calculadoraFinanzasPersonalesTool,
+  calculadoraSuenoDeudaTool,
+  descuentoSegundaManoTool,
+  tablaUnitariaTool,
 ];
 
 // Aliases for backward compatibility with older page files
