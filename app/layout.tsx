@@ -70,14 +70,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/* Google AdSense — activa en Vercel: NEXT_PUBLIC_ADSENSE_ID=ca-pub-XXXXXXXXXXXXXXXX */}
-        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
-          <script
-            async
-            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
-            crossOrigin="anonymous"
-          />
-        )}
+        {/* Google AdSense ca-pub-7353067433806430 */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7353067433806430"
+          crossOrigin="anonymous"
+        />
         {/* PWA service worker */}
         <script dangerouslySetInnerHTML={{ __html: `
           if ('serviceWorker' in navigator) {
