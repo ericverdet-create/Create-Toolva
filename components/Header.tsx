@@ -35,6 +35,12 @@ export default function Header() {
             >
               Herramientas
             </Link>
+            <Link
+              href="/blog"
+              className="hidden sm:inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
+            >
+              Blog
+            </Link>
             {/* Mobile menu button */}
             <button
               onClick={() => setMenuOpen(!menuOpen)}
@@ -56,6 +62,9 @@ export default function Header() {
             <nav className="flex flex-col gap-1">
               <Link href="/herramientas" className="px-3 py-2 rounded-lg text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
                 Todas las herramientas
+              </Link>
+              <Link href="/blog" className="px-3 py-2 rounded-lg text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
+                Blog
               </Link>
             </nav>
           </div>

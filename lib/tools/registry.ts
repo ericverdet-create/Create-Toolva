@@ -264,7 +264,18 @@ import { calculadoraCostoKmTool }          from '@/tools/math/calculadora-coste-
 import { calculadoraDietasEmpresaTool }    from '@/tools/math/calculadora-dietas-empresa/meta';
 import { calculadoraPensionViudedadTool }  from '@/tools/math/calculadora-pension-viudedad/meta';
 
+// Sprint 44
+import { alquilerVsCompraTool }            from '@/tools/math/alquiler-vs-compra/meta';
+import { precioVentaCocheTool }            from '@/tools/math/precio-venta-coche/meta';
+import { retencionIrpfAutonomoTool }       from '@/tools/math/retencion-irpf-autonomo/meta';
+import { calculadoraHerenciaTool }         from '@/tools/math/calculadora-herencia/meta';
+
 export const toolRegistry: ToolDefinition[] = [
+  // Sprint 44 (4) — 175 total
+  alquilerVsCompraTool,
+  precioVentaCocheTool,
+  retencionIrpfAutonomoTool,
+  calculadoraHerenciaTool,
   // Sprint 43 (4)
   calculadoraParoTool,
   calculadoraCostoKmTool,

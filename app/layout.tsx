@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     default: 'Toolva — Herramientas Online Gratuitas',
     template: '%s | Toolva',
   },
-  description: 'Más de 140 herramientas online gratuitas: calculadoras de finanzas, salud, conversores, utilidades de texto y más. Sin registro, sin instalación.',
+  description: 'Más de 175 herramientas online gratuitas: calculadoras de finanzas, salud, conversores, utilidades de texto y más. Sin registro, sin instalación.',
   keywords: ['herramientas online gratuitas', 'calculadora online', 'conversor online', 'calculadora financiera', 'herramientas gratis'],
   authors: [{ name: 'Toolva' }],
   manifest: '/manifest.json',
@@ -22,12 +22,12 @@ export const metadata: Metadata = {
     locale: 'es_ES',
     siteName: 'Toolva',
     title: 'Toolva — Herramientas Online Gratuitas',
-    description: 'Más de 140 herramientas online gratuitas: calculadoras, conversores, salud, finanzas y más.',
+    description: 'Más de 175 herramientas online gratuitas: calculadoras, conversores, salud, finanzas y más.',
   },
   twitter: {
     card: 'summary',
     title: 'Toolva — Herramientas Online Gratuitas',
-    description: 'Más de 140 herramientas online gratuitas. Sin registro.',
+    description: 'Más de 175 herramientas online gratuitas. Sin registro.',
   },
   robots: {
     index: true,
@@ -95,6 +95,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-400">
               <a href="/herramientas" className="hover:text-indigo-600 transition-colors">Herramientas</a>
+              <a href="/blog" className="hover:text-indigo-600 transition-colors">Blog</a>
               <a href="/sobre-nosotros" className="hover:text-indigo-600 transition-colors">Sobre Toolva</a>
               <a href="/privacidad" className="hover:text-indigo-600 transition-colors">Privacidad</a>
             </div>
