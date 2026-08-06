@@ -178,6 +178,23 @@ export default function AhorroJubilacion() {
           <div className="text-xs text-gray-400 dark:text-gray-500">Estimación con rentabilidad constante. La rentabilidad real varía. No es asesoramiento financiero.</div>
         </div>
       )}
+
+      {/* CTA Afiliado — Planes de pensiones / inversión */}
+      <div className="mt-4 rounded-2xl border border-indigo-100 dark:border-indigo-900/40 bg-indigo-50 dark:bg-indigo-900/10 p-4">
+        <p className="text-xs font-semibold text-indigo-700 dark:text-indigo-400 mb-2 uppercase tracking-wide">Empieza a invertir para tu jubilación</p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">Planes de pensiones y fondos de inversión con las mejores rentabilidades. Compara y elige el que mejor se adapta a tu perfil.</p>
+        <div className="flex flex-wrap gap-2">
+          <a href="https://www.finanbest.com" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-medium rounded-lg transition-colors">
+            Ver planes de inversión →
+          </a>
+          <a href="https://www.myinvestor.es/planes-de-pensiones" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-indigo-200 dark:border-indigo-800 hover:border-indigo-400 text-indigo-700 dark:text-indigo-300 text-xs font-medium rounded-lg transition-colors">
+            MyInvestor →
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">* Enlace patrocinado. Sin coste para ti.</p>
+      </div>
     </div>
   );
 }

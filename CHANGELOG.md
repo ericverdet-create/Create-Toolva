@@ -1,4 +1,41 @@
-# Changelog — Toolva
+# CHANGELOG — Toolva & Digital Portfolio
+*Registro completo de mejoras. Entradas más recientes primero.*
+
+---
+
+## [Agosto 2026] — Fase Monetización
+
+### AdSense & Monetización
+- Integrado Google AdSense ca-pub-7353067433806430 en layout.tsx (todas las páginas)
+- Actualizado ads.txt con ID real de AdSense
+- CMP de Google configurada para GDPR (3 botones)
+- Eliminado "sin anuncios" del home — evita contradicción con AdSense
+
+### SEO
+- Corregido robots.txt apuntando a create-toolva.vercel.app
+- Sitemap enviado a Google Search Console
+
+### Herramientas Sprint 42 (167 total)
+- Calculadora Letra DNI/NIF (mod23 + NIE)
+- Validador IBAN (mod97, desglose español)
+- Calculadora Autonomía Coche Eléctrico (6 presets)
+- Test Nivel Inglés A1-C2 (20 preguntas MCER)
+
+### Herramientas Sprint 41 (163 total)
+- Calculadora Regla de Tres (simple + compuesta)
+- Conversor Bases Numéricas (decimal/binario/hex/octal)
+- Calculadora Intereses Tarjeta de Crédito
+- Detector Número Primo
+
+### Documentación Portfolio
+- MASTER_ROADMAP.md — prioridades por retorno
+- DIGITAL_PORTFOLIO.md — estado de activos
+- OPPORTUNITIES.md — análisis 4 oportunidades próximo activo
+- CHANGELOG.md — este archivo
+
+---
+
+# Changelog — Toolva (histórico)
 
 ## Sprint 11 — Fase 2 FINAL: Performance + OG Images + Breadcrumbs
 **Fecha:** 30/07/2026

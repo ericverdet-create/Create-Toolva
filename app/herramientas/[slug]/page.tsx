@@ -14,17 +14,19 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: Props): Metadata {
   const tool = getToolBySlug(params.slug);
   if (!tool) return { title: 'Herramienta no encontrada' };
+  const title = `${tool.name} — Gratis y Online 2026`;
+  const desc = `${tool.description} Sin registro, sin instalación, resultado al instante.`;
   return {
-    title: tool.name,
-    description: tool.description,
+    title,
+    description: desc,
     keywords: tool.keywords,
     openGraph: {
-      title: tool.name,
-      description: tool.description,
+      title,
+      description: desc,
       type: 'website',
       locale: 'es_ES',
     },
-    twitter: { card: 'summary_large_image', title: tool.name, description: tool.description },
+    twitter: { card: 'summary_large_image', title, description: desc },
   };
 }
 
@@ -39,9 +41,9 @@ export default async function ToolPage({ params }: Props) {
 
   const jsonLd = toolJsonLd(tool);
   const breadcrumb = breadcrumbJsonLd([
-    { name: 'Inicio', url: 'https://toolva.com' },
-    { name: 'Herramientas', url: 'https://toolva.com/herramientas' },
-    { name: tool.name, url: `https://toolva.com/herramientas/${tool.slug}` },
+    { name: 'Inicio', url: 'https://create-toolva.vercel.app' },
+    { name: 'Herramientas', url: 'https://create-toolva.vercel.app/herramientas' },
+    { name: tool.name, url: `https://create-toolva.vercel.app/herramientas/${tool.slug}` },
   ]);
 
   return (
@@ -99,7 +101,7 @@ export default async function ToolPage({ params }: Props) {
         {related.length > 0 && (
           <aside aria-label="Herramientas relacionadas">
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-              Más herramientas de {tool.category}
+              Herramientas relacionadas
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
               {related.map(t => (

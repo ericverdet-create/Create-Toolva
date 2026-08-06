@@ -111,6 +111,23 @@ export default function SeguroVida() {
           <div>• La prima real varía según compañía, salud y cobertura exacta</div>
         </div>
       </div>
+
+      {/* CTA Afiliado — Seguros de vida */}
+      <div className="mt-4 rounded-2xl border border-purple-100 dark:border-purple-900/40 bg-purple-50 dark:bg-purple-900/10 p-4">
+        <p className="text-xs font-semibold text-purple-700 dark:text-purple-400 mb-2 uppercase tracking-wide">Compara seguros de vida</p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">Obtén el mejor precio comparando las principales aseguradoras. Proceso 100% online, sin compromiso.</p>
+        <div className="flex flex-wrap gap-2">
+          <a href="https://www.rastreator.com/seguro-de-vida.aspx" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-purple-600 hover:bg-purple-700 text-white text-xs font-medium rounded-lg transition-colors">
+            Comparar en Rastreator →
+          </a>
+          <a href="https://www.acierto.com/seguro-vida/" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-800 hover:border-purple-400 text-purple-700 dark:text-purple-300 text-xs font-medium rounded-lg transition-colors">
+            Acierto.com →
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">* Enlace patrocinado. Sin coste para ti.</p>
+      </div>
     </div>
   );
 }

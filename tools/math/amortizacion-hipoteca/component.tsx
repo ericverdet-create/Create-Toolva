@@ -150,6 +150,23 @@ export default function AmortizacionHipoteca() {
           </details>
         </div>
       )}
+
+      {/* CTA Afiliado — Hipotecas */}
+      <div className="mt-4 rounded-2xl border border-blue-100 dark:border-blue-900/40 bg-blue-50 dark:bg-blue-900/10 p-4">
+        <p className="text-xs font-semibold text-blue-700 dark:text-blue-400 mb-2 uppercase tracking-wide">¿Buscas la mejor hipoteca?</p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">Compara hipotecas variables, fijas y mixtas de los principales bancos españoles y elige la que más te ahorra.</p>
+        <div className="flex flex-wrap gap-2">
+          <a href="https://www.helpmycash.com/hipotecas/" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded-lg transition-colors">
+            Comparar hipotecas →
+          </a>
+          <a href="https://www.iahorro.com/hipotecas/" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-blue-200 dark:border-blue-800 hover:border-blue-400 text-blue-700 dark:text-blue-300 text-xs font-medium rounded-lg transition-colors">
+            iAhorro hipotecas →
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">* Enlace patrocinado. Sin coste para ti.</p>
+      </div>
     </div>
   );
 }

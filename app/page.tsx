@@ -26,7 +26,7 @@ export default function Home() {
             <span className="text-brand-600">gratuitas y sin registro</span>
           </h1>
           <p className="text-xl text-gray-500 mb-8 max-w-2xl mx-auto">
-            {toolRegistry.length}+ herramientas para calcular, convertir y resolver tareas del día a día. Rápido, privado y sin anuncios.
+            {toolRegistry.length}+ herramientas para calcular, convertir y resolver tareas del día a día. Gratis, sin registro, sin instalación.
           </p>
           <div className="max-w-xl mx-auto mb-12">
             <SearchAndFilter />
@@ -84,7 +84,7 @@ export default function Home() {
         <section className="py-12 text-center" aria-label="Información adicional">
           <div className="bg-brand-50 border border-brand-100 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-2">{toolRegistry.length} herramientas gratuitas</h2>
-            <p className="text-gray-600 mb-4">Sin registro. Sin anuncios. Sin límites. Totalmente privado.</p>
+            <p className="text-gray-600 mb-4">Sin registro. Sin instalación. Resultados al instante.</p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-500">
               <span>✓ Funciona sin internet (PWA)</span>
               <span>✓ Compatible con todos los dispositivos</span>

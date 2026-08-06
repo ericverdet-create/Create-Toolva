@@ -157,6 +157,23 @@ export default function CalculadoraIrpf() {
           )}
         </div>
       )}
+
+      {/* CTA Afiliado — Declaración de la Renta / IRPF */}
+      <div className="mt-4 rounded-2xl border border-orange-100 dark:border-orange-900/40 bg-orange-50 dark:bg-orange-900/10 p-4">
+        <p className="text-xs font-semibold text-orange-700 dark:text-orange-400 mb-2 uppercase tracking-wide">¿Haces bien tu declaración?</p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">Con un asesor fiscal online puedes recuperar más dinero en tu declaración de la renta. Muchos contribuyentes dejan cientos de euros sin reclamar.</p>
+        <div className="flex flex-wrap gap-2">
+          <a href="https://www.declarando.es" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-orange-600 hover:bg-orange-700 text-white text-xs font-medium rounded-lg transition-colors">
+            Declarar con asesor →
+          </a>
+          <a href="https://www.taxfix.es" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-orange-200 dark:border-orange-800 hover:border-orange-400 text-orange-700 dark:text-orange-300 text-xs font-medium rounded-lg transition-colors">
+            TaxFix →
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">* Enlace patrocinado. Sin coste para ti.</p>
+      </div>
     </div>
   );
 }

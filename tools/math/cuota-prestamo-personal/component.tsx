@@ -144,6 +144,23 @@ export default function CuotaPrestamoPersonal() {
           )}
         </div>
       )}
+
+      {/* CTA Afiliado — Préstamos personales */}
+      <div className="mt-4 rounded-2xl border border-green-100 dark:border-green-900/40 bg-green-50 dark:bg-green-900/10 p-4">
+        <p className="text-xs font-semibold text-green-700 dark:text-green-400 mb-2 uppercase tracking-wide">¿Necesitas financiación?</p>
+        <p className="text-xs text-gray-600 dark:text-gray-400 mb-3">Compara préstamos personales con las mejores condiciones del mercado. Respuesta en minutos, sin papeleos.</p>
+        <div className="flex flex-wrap gap-2">
+          <a href="https://www.helpmycash.com/prestamos/" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-medium rounded-lg transition-colors">
+            Comparar préstamos →
+          </a>
+          <a href="https://www.cofidis.es/es/prestamos/prestamo-personal.html" target="_blank" rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-1 px-3 py-1.5 bg-white dark:bg-gray-800 border border-green-200 dark:border-green-800 hover:border-green-400 text-green-700 dark:text-green-300 text-xs font-medium rounded-lg transition-colors">
+            Cofidis →
+          </a>
+        </div>
+        <p className="text-xs text-gray-400 mt-2">* Enlace patrocinado. Sin coste para ti.</p>
+      </div>
     </div>
   );
 }
