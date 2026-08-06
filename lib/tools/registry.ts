@@ -1,5 +1,10 @@
 import { ComponentType } from 'react';
 
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface ToolDefinition {
   id: string;
   slug: string;
@@ -9,6 +14,7 @@ export interface ToolDefinition {
   category: string;
   keywords: string[];
   tags?: string[];
+  faq?: FaqItem[];
   component: () => Promise<{ default: ComponentType }>;
 }
 

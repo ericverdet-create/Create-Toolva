@@ -98,6 +98,32 @@ export default async function ToolPage({ params }: Props) {
           </Suspense>
         </section>
 
+        {tool.faq && tool.faq.length > 0 && (
+          <section aria-label="Preguntas frecuentes" className="mb-8">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: tool.faq.map(f => ({
+                '@type': 'Question',
+                name: f.question,
+                acceptedAnswer: { '@type': 'Answer', text: f.answer },
+              })),
+            }) }} />
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Preguntas frecuentes</h2>
+            <div className="space-y-3">
+              {tool.faq.map((f, i) => (
+                <details key={i} className="rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 group">
+                  <summary className="flex justify-between items-center px-4 py-3 cursor-pointer text-sm font-medium text-gray-800 dark:text-gray-200 list-none">
+                    {f.question}
+                    <span className="ml-2 text-gray-400 group-open:rotate-180 transition-transform text-xs">▼</span>
+                  </summary>
+                  <div className="px-4 pb-3 text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{f.answer}</div>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
+
         {related.length > 0 && (
           <aside aria-label="Herramientas relacionadas">
             <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
