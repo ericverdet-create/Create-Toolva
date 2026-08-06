@@ -1,48 +1,43 @@
 import type { ToolDefinition } from './tools/registry';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, SITE_EMAIL } from './config';
 
-const BASE_URL = 'https://create-toolva.vercel.app';
-
-export function toolJsonLd(tool: ToolDefinition, baseUrl = BASE_URL) {
+export function toolJsonLd(tool: ToolDefinition) {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: tool.name,
     description: tool.description,
-    url: `${baseUrl}/herramientas/${tool.slug}`,
+    url: `${SITE_URL}/herramientas/${tool.slug}`,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
     inLanguage: 'es',
-    publisher: {
-      '@type': 'Organization',
-      name: 'Toolva',
-      url: baseUrl,
-    },
+    publisher: { '@type': 'Organization', name: SITE_NAME, url: SITE_URL },
   };
 }
 
-export function siteJsonLd(baseUrl = BASE_URL) {
+export function siteJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Toolva',
-    description: 'Más de 175 herramientas online gratuitas: calculadoras de finanzas, salud, conversores y más.',
-    url: baseUrl,
+    name: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     inLanguage: 'es',
     publisher: {
       '@type': 'Organization',
-      name: 'Toolva',
-      url: baseUrl,
+      name: SITE_NAME,
+      url: SITE_URL,
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer support',
-        email: 'hola@toolva.com',
+        email: SITE_EMAIL,
         availableLanguage: 'Spanish',
       },
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${baseUrl}/buscar?q={search_term_string}` },
+      target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/buscar?q={search_term_string}` },
       'query-input': 'required name=search_term_string',
     },
   };

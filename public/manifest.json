@@ -1,13 +1,15 @@
 {
   "name": "Toolva - Herramientas Online Gratuitas",
   "short_name": "Toolva",
-  "description": "Más de 40 herramientas online gratuitas: calculadoras, conversores, utilidades de texto y más.",
+  "description": "Más de 175 herramientas gratuitas: calculadoras de finanzas, salud, conversores y más. Sin registro.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4F46E5",
   "orientation": "any",
   "lang": "es",
+  "dir": "ltr",
   "icons": [
     {
       "src": "/icons/icon-192.png",
@@ -22,44 +24,35 @@
       "purpose": "maskable any"
     }
   ],
-  "categories": [
-    "utilities",
-    "productivity"
-  ],
-  "screenshots": [],
+  "categories": ["utilities", "productivity", "finance"],
   "shortcuts": [
     {
-      "name": "Calculadora IVA",
-      "short_name": "IVA",
-      "url": "/herramientas/calculadora-iva",
-      "icons": [
-        {
-          "src": "/icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "name": "Calculadora Hipoteca",
+      "short_name": "Hipoteca",
+      "description": "Calcula tu cuota hipotecaria",
+      "url": "/herramientas/calculadora-hipoteca",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "Conversor Temperatura",
-      "short_name": "Temperatura",
-      "url": "/herramientas/conversor-temperatura-completo",
-      "icons": [
-        {
-          "src": "/icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "name": "Sueldo Neto",
+      "short_name": "Sueldo Neto",
+      "description": "Calcula tu salario neto",
+      "url": "/herramientas/sueldo-neto",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     },
     {
-      "name": "Calculadora Porcentaje",
-      "short_name": "Porcentaje",
-      "url": "/herramientas/calculadora-porcentaje",
-      "icons": [
-        {
-          "src": "/icons/icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
+      "name": "Calculadora IRPF",
+      "short_name": "IRPF",
+      "description": "Calcula tu IRPF 2026",
+      "url": "/herramientas/calculadora-irpf",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Calculadora Paro",
+      "short_name": "Paro",
+      "description": "Calcula tu prestación de desempleo",
+      "url": "/herramientas/calculadora-paro",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
     }
   ]
 }

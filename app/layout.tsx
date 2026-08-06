@@ -4,38 +4,51 @@ import './globals.css';
 import Header from '@/components/Header';
 import SkipLink from '@/components/SkipLink';
 import { siteJsonLd } from '@/lib/structured-data';
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from '@/lib/config';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://create-toolva.vercel.app'),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Toolva — Herramientas Online Gratuitas',
-    template: '%s | Toolva',
+    default: `${SITE_NAME} — Herramientas Online Gratuitas`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description: 'Más de 175 herramientas online gratuitas: calculadoras de finanzas, salud, conversores, utilidades de texto y más. Sin registro, sin instalación.',
-  keywords: ['herramientas online gratuitas', 'calculadora online', 'conversor online', 'calculadora financiera', 'herramientas gratis'],
-  authors: [{ name: 'Toolva' }],
+  description: SITE_DESCRIPTION,
+  keywords: ['herramientas online gratuitas', 'calculadora online', 'conversor online', 'calculadora financiera', 'herramientas gratis España'],
+  authors: [{ name: SITE_NAME, url: SITE_URL }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
   manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: SITE_NAME,
+  },
+  formatDetection: { telephone: false },
   openGraph: {
     type: 'website',
     locale: 'es_ES',
-    siteName: 'Toolva',
-    title: 'Toolva — Herramientas Online Gratuitas',
-    description: 'Más de 175 herramientas online gratuitas: calculadoras, conversores, salud, finanzas y más.',
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: `${SITE_NAME} — Herramientas Online Gratuitas`,
+    description: 'Más de 175 herramientas gratuitas: calculadoras de finanzas, salud, conversores y más. Sin registro.',
   },
   twitter: {
     card: 'summary',
-    title: 'Toolva — Herramientas Online Gratuitas',
+    title: `${SITE_NAME} — Herramientas Online Gratuitas`,
     description: 'Más de 175 herramientas online gratuitas. Sin registro.',
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
   verification: {
     google: 'UAU2Yox2-4eQAbI8yAGNSFwJ_zAeLVdgOEFCmcmib2Q',
+  },
+  alternates: {
+    canonical: SITE_URL,
   },
 };
 
@@ -47,6 +60,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -54,18 +68,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="es" suppressHydrationWarning>
       <head>
+        {/* iOS Safari */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         {/* Dark mode: apply before paint to avoid flash */}
-        <script dangerouslySetInnerHTML={{ __html: `
-          (function(){
-            try {
-              var t = localStorage.getItem('toolva-theme');
-              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-              if (t === 'dark' || (!t && prefersDark)) {
-                document.documentElement.classList.add('dark');
-              }
-            } catch(e){}
-          })();
-        ` }} />
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('toolva-theme');var d=window.matchMedia('(prefers-color-scheme: dark)').matches;if(t==='dark'||(!t&&d)){document.documentElement.classList.add('dark');}}catch(e){}})();` }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -77,13 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           crossOrigin="anonymous"
         />
         {/* PWA service worker */}
-        <script dangerouslySetInnerHTML={{ __html: `
-          if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-              navigator.serviceWorker.register('/sw.js');
-            });
-          }
-        ` }} />
+        <script dangerouslySetInnerHTML={{ __html: `if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('/sw.js');});}` }} />
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <SkipLink />

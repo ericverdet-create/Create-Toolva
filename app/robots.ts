@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/config';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,8 +9,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/'],
       },
+      {
+        userAgent: 'Googlebot',
+        allow: '/',
+        crawlDelay: 0,
+      },
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+        crawlDelay: 0,
+      },
     ],
-    sitemap: 'https://create-toolva.vercel.app/sitemap.xml',
-    host: 'https://create-toolva.vercel.app',
+    sitemap: `${SITE_URL}/sitemap.xml`,
+    host: SITE_URL,
   };
 }

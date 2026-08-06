@@ -63,6 +63,28 @@ export const blogPosts: BlogPostMeta[] = [
   },
 ];
 
+  {
+    slug: 'autonomo-cuanto-pagar-seguridad-social',
+    title: 'Autónomo: cuánto se paga a la Seguridad Social en 2026 (nuevos tramos)',
+    description: 'Guía completa del nuevo sistema de cotización por ingresos reales para autónomos en España 2026. Tabla de cuotas por tramos, tarifa plana, gastos deducibles y cómo elegir tu base.',
+    date: '2026-08-06',
+    category: 'Trabajo',
+    tags: ['autónomo', 'Seguridad Social', 'cuota', 'cotización', '2026'],
+    readingTime: 7,
+    relatedTools: ['calculadora-autonomos', 'calculadora-retencion-irpf-autonomo'],
+  },
+  {
+    slug: 'como-calcular-finiquito-espana',
+    title: 'Cómo calcular el finiquito en España: qué te deben y cuándo',
+    description: 'Aprende qué incluye el finiquito, cuándo hay indemnización y cuánto es según el tipo de despido. Con ejemplos reales y calculadora de finiquito e indemnización.',
+    date: '2026-08-06',
+    category: 'Trabajo',
+    tags: ['finiquito', 'indemnización', 'despido', 'laboral'],
+    readingTime: 6,
+    relatedTools: ['finiquito', 'calculadora-paro'],
+  },
+];
+
 export function getPostBySlug(slug: string): BlogPostMeta | undefined {
   return blogPosts.find(p => p.slug === slug);
 }
