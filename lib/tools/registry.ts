@@ -258,7 +258,18 @@ import { inflationCalculatorTool }   from '@/tools/math/inflation-calculator/met
 import { multiplicationTableTool }   from '@/tools/math/multiplication-table/meta';
 import { weightedAverageTool }       from '@/tools/math/weighted-average/meta';
 
+// Sprint 43
+import { calculadoraParoTool }             from '@/tools/math/calculadora-paro/meta';
+import { calculadoraCostoKmTool }          from '@/tools/math/calculadora-coste-km/meta';
+import { calculadoraDietasEmpresaTool }    from '@/tools/math/calculadora-dietas-empresa/meta';
+import { calculadoraPensionViudedadTool }  from '@/tools/math/calculadora-pension-viudedad/meta';
+
 export const toolRegistry: ToolDefinition[] = [
+  // Sprint 43 (4)
+  calculadoraParoTool,
+  calculadoraCostoKmTool,
+  calculadoraDietasEmpresaTool,
+  calculadoraPensionViudedadTool,
   // Math (13)
   percentageCalculatorTool,
   percentageChangeTool,
